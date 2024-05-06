@@ -1,0 +1,273 @@
+/* Stile generico per il body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    background-color: #111; 
+    color: #fff; 
+}
+
+/* Stile specifico per l'header */
+.header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li, .menu-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-list ul {
+    display: inline-block;
+    margin-right: 440px; 
+}
+
+.menu ul li a, .menu-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Stile specifico per il main */
+.main {
+    padding: 20px;
+}
+
+/* Stile specifico per le anteprime */
+.content-preview {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    scroll-behavior: smooth; 
+}
+
+.content-preview::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-preview::-webkit-scrollbar-track {
+    background-color: #010101;
+}
+
+.content-preview::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.content-preview::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.preview-item {
+    position: relative;
+    width: 20%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.preview-item:last-child {
+    margin-right: 0px;
+}
+
+.preview-item img {
+    width: 200px;
+    height: 125px;
+}
+
+.icon{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;   
+}
+
+.log{
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;   
+}
+
+.icon-account{
+    width: 45px;
+    height: 45px;
+}
+
+.preview-item img {
+    transition: transform 0.3s ease; 
+}
+
+.preview-item:hover img {
+    transform: scale(1.2); 
+    z-index: 2; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden; 
+    z-index: 3; 
+    transition: visibility 0.3s ease; 
+}
+
+.preview-item:hover .overlay {
+    visibility: visible; 
+}
+
+
+.hero-preview {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 70vh; 
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero-preview img {
+    width: auto;
+    height: 100%;
+    flex: 0 0 50%;
+}
+
+.preview-info {
+    flex: 0 0 50%; 
+    padding: 0 20px;
+    text-align: left;
+    color: #fff;
+    z-index: 1;
+}
+
+.preview-info h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.preview-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #ff0a16;
+}
+
+.info-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Stile specifico per il footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+}
+
+.footer-links ul, .footer-links span {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.bottom-footer {
+    margin-top: 20px;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
+.overlay-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.overlay-description {
+    font-size: 1em;
+}
+
+/* Stili per i bottoni di slide */
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+
+.content-preview {
+    overflow-x: hidden;
+}
+
+
